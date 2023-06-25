@@ -1,0 +1,31 @@
+// Crie um Slice de inteiros e solicite ao usuário que informe o tamanho do Slice
+// e os valores dos elementos. ok
+// Em seguida, imprima o Slice e a soma dos valores armazenados.
+package main
+
+import "fmt"
+
+func main() {
+	var size int
+	fmt.Print("Qual o tamanho do slice?")
+	fmt.Scan(&size)
+
+	var num = make([]int, size)
+	fmt.Println("len(num)=", len(num))
+
+	var add int
+	var valor int = 1
+	soma := 0
+
+	for valor <= size {
+		fmt.Print("Escolha um número.")
+		fmt.Scan(&add)
+		numeros = append(num, add)
+		valor++
+		soma += add
+	}
+
+	fmt.Println(num)
+	fmt.Println("A soma dos valores indicados é: ", soma)
+
+}
