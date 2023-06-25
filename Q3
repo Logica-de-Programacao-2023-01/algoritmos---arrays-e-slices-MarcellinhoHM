@@ -1,0 +1,23 @@
+// Crie um Array de floats com 4 elementos e calcule o produto dos valores armazenados no Array.
+package main
+
+import "fmt"
+
+func main() {
+	var a float64
+	var b float64
+	var c float64
+	var d float64
+	fmt.Print("Escolha um número.")
+	fmt.Scan(&a)
+	fmt.Print("Escolha um número.")
+	fmt.Scan(&b)
+	fmt.Print("Escolha um número.")
+	fmt.Scan(&c)
+	fmt.Print("Escolha um número.")
+	fmt.Scan(&d)
+
+	var num = [4]float64{a, b, c, d}
+	fmt.Println(num)
+	fmt.Println(a * b * c * d)
+}
